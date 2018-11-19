@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Public.Core\Public.Core.csproj" />
     <ProjectReference Include="..\Service.Entity\Service.Entity.csproj" />
     <ProjectReference Include="..\WebSite.ViewModel\WebSite.ViewModel.csproj" />
   </ItemGroup>
