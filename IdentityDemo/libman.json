@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "admin-lte@2.4.8",
+      "destination": "wwwroot/lib/adminlte"
+    },
+    {
+      "library": "angular.js@1.7.5",
+      "destination": "wwwroot/lib/angular"
+    },
+    {
+      "library": "zTree.v3@3.5.33",
+      "destination": "wwwroot/lib/zTree"
+    }
+  ]
+}

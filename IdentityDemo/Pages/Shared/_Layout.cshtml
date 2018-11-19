@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - IdentityDemo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="~/lib/adminlte/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/lib/adminlte/css/skins/_all-skins.css" rel="stylesheet" />
+    <link href="~/lib/adminlte/css/font/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-page="/Index" class="navbar-brand">IdentityDemo</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-page="/Index">Home</a></li>
+                    <li><a asp-page="/About">About</a></li>
+                    <li><a asp-page="/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/adminlte/js/adminlte.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
